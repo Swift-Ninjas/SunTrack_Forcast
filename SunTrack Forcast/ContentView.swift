@@ -7,19 +7,15 @@
 
 import SwiftUI
 
-@Observable class ViewModel {
-    
-}
-
 struct ContentView: View {
+    @State var model = ViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if true {   //Wenn Userdaten leer sind.
+            EntryUserValuesView(model: model)
+        }else {
+            //DaschboardView
         }
-        .padding()
     }
 }
 
