@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+@Observable class ViewModel {
+    
+}
+
 struct ContentView: View {
     var body: some View {
         VStack {

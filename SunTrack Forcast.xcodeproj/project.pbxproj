@@ -215,6 +215,9 @@
 				Base,
 			);
 			mainGroup = 18583F232C43BA8F007DB4FA;
+			packageReferences = (
+				18A97B212C43DEFC00CB917B /* XCRemoteSwiftPackageReference "sdk" */,
+			);
 			productRefGroup = 18583F2D2C43BA8F007DB4FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +591,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18A97B212C43DEFC00CB917B /* XCRemoteSwiftPackageReference "sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/open-meteo/sdk.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 18583F242C43BA8F007DB4FA /* Project object */;
 }
