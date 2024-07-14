@@ -11,22 +11,22 @@ import SwiftUI
 struct EntryUserValuesView: View {
     let model: ViewModel
     
-    @State var dummyPLZ: String = ""
-    @State var dummyKWh: Double? = nil
+    @State var plzInputValue: String = ""
+    @State var kWhInputValue: Double? = nil
     
     var body: some View {
         VStack {
             Group {
-                TextField("PLZ", text: $dummyPLZ)
+                TextField("PLZ", text: $plzInputValue)
                     .textContentType(.postalCode)
                     
-                TextField("kWh der Anlage", value: $dummyKWh, format: .number)
+                TextField("kWh der Anlage", value: $kWhInputValue, format: .number)
             }
             .textFieldStyle(.roundedBorder)
             .font(.title3)
             
             Button {
-                //ViewModel Methode
+                model.saveUserValues(plz: plzInputValue, kWh: kWhInputValue)
             } label: {
                 Text("LOS!")
             }

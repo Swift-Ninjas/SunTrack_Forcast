@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var model = ViewModel()
     
     var body: some View {
-        if true {   //Wenn Userdaten leer sind.
+        if model.hasEnteredUserValues == false {
             EntryUserValuesView(model: model)
         }else {
             //DaschboardView
