@@ -14,6 +14,8 @@
 		18583F412C43BA90007DB4FA /* SunTrack_ForcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18583F402C43BA90007DB4FA /* SunTrack_ForcastTests.swift */; };
 		18583F4B2C43BA91007DB4FA /* SunTrack_ForcastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18583F4A2C43BA90007DB4FA /* SunTrack_ForcastUITests.swift */; };
 		18583F4D2C43BA91007DB4FA /* SunTrack_ForcastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18583F4C2C43BA91007DB4FA /* SunTrack_ForcastUITestsLaunchTests.swift */; };
+		9FF1A1D42C4403B9001CEFAB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1A1D32C4403B9001CEFAB /* ViewModel.swift */; };
+		9FF1A1D62C440463001CEFAB /* EntryUserValuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1A1D52C440463001CEFAB /* EntryUserValuesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		18583F462C43BA90007DB4FA /* SunTrack ForcastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SunTrack ForcastUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18583F4A2C43BA90007DB4FA /* SunTrack_ForcastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTrack_ForcastUITests.swift; sourceTree = "<group>"; };
 		18583F4C2C43BA91007DB4FA /* SunTrack_ForcastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTrack_ForcastUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FF1A1D32C4403B9001CEFAB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9FF1A1D52C440463001CEFAB /* EntryUserValuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryUserValuesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		18583F2E2C43BA8F007DB4FA /* SunTrack Forcast */ = {
 			isa = PBXGroup;
 			children = (
+				9FF1A1D32C4403B9001CEFAB /* ViewModel.swift */,
 				18583F2F2C43BA8F007DB4FA /* SunTrack_ForcastApp.swift */,
 				18583F312C43BA8F007DB4FA /* ContentView.swift */,
+				9FF1A1D52C440463001CEFAB /* EntryUserValuesView.swift */,
 				18583F332C43BA90007DB4FA /* Assets.xcassets */,
 				18583F352C43BA90007DB4FA /* Preview Content */,
 			);
@@ -260,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF1A1D62C440463001CEFAB /* EntryUserValuesView.swift in Sources */,
 				18583F322C43BA8F007DB4FA /* ContentView.swift in Sources */,
+				9FF1A1D42C4403B9001CEFAB /* ViewModel.swift in Sources */,
 				18583F302C43BA8F007DB4FA /* SunTrack_ForcastApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
