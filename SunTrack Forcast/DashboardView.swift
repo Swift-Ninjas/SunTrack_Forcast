@@ -11,6 +11,8 @@ struct DashboardView: View {
     
     let model: ViewModel
     
+    @State var openSheet: Bool = false
+    
     var body: some View {
         let _ = Self._printChanges()
         NavigationView {
@@ -56,8 +58,9 @@ struct DashboardView: View {
             }
             .padding()
             .navigationTitle("Solar Vorhersage")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
+                ToolbarItemGroup(placement: .topBarTrailing) {
                     Button {
                         Task {
                             await update()
@@ -65,16 +68,16 @@ struct DashboardView: View {
                     } label: {
                         Image(systemName: "arrow.circlepath")
                     }
-                }
-                ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        
+                        openSheet = true
                     } label: {
                         Image(systemName: "gearshape")
                     }
                 }
             }
-        }
+        }.sheet(isPresented: $openSheet, onDismiss: {Task{await update()}}, content: {
+            SheetUserValuesView(model: model)
+        })
         .task {
            await update()
         }
