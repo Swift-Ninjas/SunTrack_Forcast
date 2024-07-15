@@ -15,6 +15,7 @@
 		18583F4B2C43BA91007DB4FA /* SunTrack_ForcastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18583F4A2C43BA90007DB4FA /* SunTrack_ForcastUITests.swift */; };
 		18583F4D2C43BA91007DB4FA /* SunTrack_ForcastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18583F4C2C43BA91007DB4FA /* SunTrack_ForcastUITestsLaunchTests.swift */; };
 		1872D3382C446A1200FB8C4D /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872D3372C446A1200FB8C4D /* DashboardView.swift */; };
+		18EC41022C45845000C16B73 /* SheetUserValuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC41012C45845000C16B73 /* SheetUserValuesView.swift */; };
 		9FF1A1D42C4403B9001CEFAB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1A1D32C4403B9001CEFAB /* ViewModel.swift */; };
 		9FF1A1D62C440463001CEFAB /* EntryUserValuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1A1D52C440463001CEFAB /* EntryUserValuesView.swift */; };
 		9FF1A2002C445BCD001CEFAB /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1A1FF2C445BCD001CEFAB /* WeatherData.swift */; };
@@ -52,6 +53,7 @@
 		18583F4A2C43BA90007DB4FA /* SunTrack_ForcastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTrack_ForcastUITests.swift; sourceTree = "<group>"; };
 		18583F4C2C43BA91007DB4FA /* SunTrack_ForcastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTrack_ForcastUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1872D3372C446A1200FB8C4D /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		18EC41012C45845000C16B73 /* SheetUserValuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetUserValuesView.swift; sourceTree = "<group>"; };
 		9FF1A1D32C4403B9001CEFAB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9FF1A1D52C440463001CEFAB /* EntryUserValuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryUserValuesView.swift; sourceTree = "<group>"; };
 		9FF1A1FF2C445BCD001CEFAB /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				18583F352C43BA90007DB4FA /* Preview Content */,
 				1872D3372C446A1200FB8C4D /* DashboardView.swift */,
 				9FF23CFD2C4515A600D939A9 /* KWHForecastChart.swift */,
+				18EC41012C45845000C16B73 /* SheetUserValuesView.swift */,
 			);
 			path = "SunTrack Forcast";
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EC41022C45845000C16B73 /* SheetUserValuesView.swift in Sources */,
 				9FF1A1D62C440463001CEFAB /* EntryUserValuesView.swift in Sources */,
 				9FF1A2052C445D42001CEFAB /* DayResultData.swift in Sources */,
 				9FF1A2002C445BCD001CEFAB /* WeatherData.swift in Sources */,
