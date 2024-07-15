@@ -50,7 +50,7 @@ struct DashboardView: View {
                 
                 Spacer()
                 
-                Text("Letztes update: \(model.lastUpdate.formatted(date: .numeric, time: .standard))")
+                Text("Letzte Aktualisierung: \(model.lastUpdate.formatted(date: .numeric, time: .standard))")
                     .font(.footnote)
                     .foregroundStyle(.tertiary)
             }
