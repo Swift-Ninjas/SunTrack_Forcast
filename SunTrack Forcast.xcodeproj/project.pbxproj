@@ -20,6 +20,7 @@
 		9FF1A2002C445BCD001CEFAB /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1A1FF2C445BCD001CEFAB /* WeatherData.swift */; };
 		9FF1A2032C445C23001CEFAB /* OpenMeteoSdk in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF1A2022C445C23001CEFAB /* OpenMeteoSdk */; };
 		9FF1A2052C445D42001CEFAB /* DayResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF1A2042C445D42001CEFAB /* DayResultData.swift */; };
+		9FF23CFE2C4515A600D939A9 /* KWHForecastChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF23CFD2C4515A600D939A9 /* KWHForecastChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		9FF1A1D52C440463001CEFAB /* EntryUserValuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryUserValuesView.swift; sourceTree = "<group>"; };
 		9FF1A1FF2C445BCD001CEFAB /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		9FF1A2042C445D42001CEFAB /* DayResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayResultData.swift; sourceTree = "<group>"; };
+		9FF23CFD2C4515A600D939A9 /* KWHForecastChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KWHForecastChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				18583F332C43BA90007DB4FA /* Assets.xcassets */,
 				18583F352C43BA90007DB4FA /* Preview Content */,
 				1872D3372C446A1200FB8C4D /* DashboardView.swift */,
+				9FF23CFD2C4515A600D939A9 /* KWHForecastChart.swift */,
 			);
 			path = "SunTrack Forcast";
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				9FF1A2052C445D42001CEFAB /* DayResultData.swift in Sources */,
 				9FF1A2002C445BCD001CEFAB /* WeatherData.swift in Sources */,
 				18583F322C43BA8F007DB4FA /* ContentView.swift in Sources */,
+				9FF23CFE2C4515A600D939A9 /* KWHForecastChart.swift in Sources */,
 				1872D3382C446A1200FB8C4D /* DashboardView.swift in Sources */,
 				9FF1A1D42C4403B9001CEFAB /* ViewModel.swift in Sources */,
 				18583F302C43BA8F007DB4FA /* SunTrack_ForcastApp.swift in Sources */,
@@ -458,7 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SunTrack Forcast/Preview Content\"";
-				DEVELOPMENT_TEAM = G2ADM8SS55;
+				DEVELOPMENT_TEAM = 5B4LV69C8H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -487,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SunTrack Forcast/Preview Content\"";
-				DEVELOPMENT_TEAM = G2ADM8SS55;
+				DEVELOPMENT_TEAM = 5B4LV69C8H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
