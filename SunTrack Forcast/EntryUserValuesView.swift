@@ -19,8 +19,10 @@ struct EntryUserValuesView: View {
             Group {
                 TextField("PLZ", text: $plzInputValue)
                     .textContentType(.postalCode)
+                    .keyboardType(.numberPad)
                     
                 TextField("kWh der Anlage", value: $kWhInputValue, format: .number)
+                    .keyboardType(.decimalPad)
             }
             .textFieldStyle(.roundedBorder)
             .font(.title3)
