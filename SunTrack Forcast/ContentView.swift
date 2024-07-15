@@ -14,7 +14,7 @@ struct ContentView: View {
         if model.hasEnteredUserValues == false {
             EntryUserValuesView(model: model)
         }else {
-            DashboardView()
+            DashboardView(model: model)
         }
     }
 }
