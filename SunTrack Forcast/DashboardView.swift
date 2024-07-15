@@ -81,6 +81,7 @@ struct DashboardView: View {
     }
     
     private func update() async {
+        model.fetchCoordinate()
         if let currentCoordinate = model.currentCoordinate {
             model.isLoadingChartData = true
             let resultData = await model.loadData(coordinate: currentCoordinate, daysForecast: 7)
