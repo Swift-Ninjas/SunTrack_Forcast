@@ -26,7 +26,7 @@ struct DashboardView: View {
                         .padding()
                         .background(.background)
                         .cornerRadius(10)
-//                        .shadow(radius: 5)
+                        .shadow(radius: 5)
                     
 //                        LineChartView(data: model.currentChartData.map { $0.kWh })
 //                            .frame(height: 300)
@@ -39,14 +39,14 @@ struct DashboardView: View {
                         .padding()
                         .background(.background)
                         .cornerRadius(10)
-//                        .shadow(radius: 5)
+                        .shadow(radius: 5)
                 }
 
                 UserValuesView(userPLZ: model.userPLZ, userkWH: model.userkWH)
                     .padding()
                     .background(.background)
                     .cornerRadius(10)
-//                    .shadow(radius: 5)
+                    .shadow(radius: 5)
                 
                 Spacer()
                 
