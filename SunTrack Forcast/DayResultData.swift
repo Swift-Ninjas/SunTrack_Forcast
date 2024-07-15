@@ -8,9 +8,11 @@
 import Foundation
 
 struct DayResultData {
-    var daylightInterval: Float
+    let date: Date
+    var sunshineInterval: Float
     var minTemperature: Float
     var maxTemperature: Float
+    let weatherCode: Float
     
     var averageTemperature: Float {
         (minTemperature + maxTemperature) / 2

@@ -27,6 +27,7 @@ struct EntryUserValuesView: View {
             
             Button {
                 model.saveUserValues(plz: plzInputValue, kWh: kWhInputValue)
+                model.fetchCoordinate()
             } label: {
                 Text("LOS!")
             }
