@@ -26,7 +26,7 @@ struct DashboardView: View {
                         .padding()
                         .background(.background)
                         .cornerRadius(10)
-                        .shadow(radius: 5)
+//                        .shadow(radius: 5)
                     
 //                        LineChartView(data: model.currentChartData.map { $0.kWh })
 //                            .frame(height: 300)
@@ -39,32 +39,53 @@ struct DashboardView: View {
                         .padding()
                         .background(.background)
                         .cornerRadius(10)
-                        .shadow(radius: 5)
+//                        .shadow(radius: 5)
                 }
 
                 UserValuesView(userPLZ: model.userPLZ, userkWH: model.userkWH)
                     .padding()
                     .background(.background)
                     .cornerRadius(10)
-                    .shadow(radius: 5)
+//                    .shadow(radius: 5)
                 
                 Spacer()
+                
+                Text("Letztes update: \(model.lastUpdate.formatted(date: .numeric, time: .standard))")
+                    .font(.footnote)
+                    .foregroundStyle(.tertiary)
             }
             .padding()
             .navigationTitle("Solar Vorhersage")
-            .navigationBarItems(trailing: Button(action: {
-            }) {
-                Image(systemName: "gearshape")
-                    .imageScale(.large)
-            })
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        Task {
+                            await update()
+                        }
+                    } label: {
+                        Image(systemName: "arrow.circlepath")
+                    }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "gearshape")
+                    }
+                }
+            }
         }
         .task {
-            if let currentCoordinate = model.currentCoordinate {
-                model.isLoadingChartData = true
-                let resultData = await model.loadData(coordinate: currentCoordinate, daysForecast: 7)
-                await model.calculateKWhChartData(from: resultData)
-                model.isLoadingChartData = false
-            }
+           await update()
+        }
+    }
+    
+    private func update() async {
+        if let currentCoordinate = model.currentCoordinate {
+            model.isLoadingChartData = true
+            let resultData = await model.loadData(coordinate: currentCoordinate, daysForecast: 7)
+            await model.calculateKWhChartData(from: resultData)
+            model.isLoadingChartData = false
         }
     }
 }

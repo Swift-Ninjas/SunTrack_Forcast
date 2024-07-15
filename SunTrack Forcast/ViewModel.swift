@@ -15,6 +15,7 @@ import MapKit
     var userkWH: Double? = nil  //Es ist ein Optional, damit das TextField den Promt anzeigt, wenn der User keinen Wert eingegeben hat.
     private let keyForUserPLZ = "USER_PLZ"
     private let keyForUserKWh = "USER_KWH"
+    var lastUpdate: Date = .now
    
     var currentCoordinate: CLLocationCoordinate2D? = nil
     var currentChartData: Array<KWhChartData> = []
@@ -143,6 +144,8 @@ extension ViewModel {
             }
             
         }
+        
+        lastUpdate = .now
         
         return results
     }
