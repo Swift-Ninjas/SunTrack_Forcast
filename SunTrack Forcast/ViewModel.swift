@@ -209,12 +209,14 @@ extension ViewModel {
             var productionDecreaseInPercent = 0.0
             
             if averageTemp > 25 {
-                productionDecreaseInPercent = Double((averageTemp - 25) * 0.5)
+                productionDecreaseInPercent = Double((averageTemp - 25) * 0.005)
             }
             
-            var kWhSum = (Double(dayResult.sunshineInterval) / 60 / 60) * kWhOfPowerPlant * productionDecreaseInPercent
+            let kWhSum = (Double(dayResult.sunshineInterval) / 60 / 60) * kWhOfPowerPlant
+            let productionDecrease: Double = kWhSum * productionDecreaseInPercent
+            let resultKWH = kWhSum - productionDecrease
             
-            chartData.append(KWhChartData(kWh: kWhSum, day: dayResult.date, weatherCode: dayResult.weatherCode))
+            chartData.append(KWhChartData(kWh: resultKWH, day: dayResult.date, weatherCode: dayResult.weatherCode))
         }
         
         self.currentChartData = chartData
