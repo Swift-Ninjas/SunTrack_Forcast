@@ -57,7 +57,7 @@ struct DashboardView: View {
                     .foregroundStyle(.tertiary)
             }
             .padding()
-            .navigationTitle("Solar Vorhersage")
+            .navigationTitle("SunTrack Forcast")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .topBarTrailing) {
@@ -76,7 +76,7 @@ struct DashboardView: View {
                 }
             }
         }.sheet(isPresented: $openSheet, onDismiss: {Task{await update()}}, content: {
-            SheetUserValuesView(model: model)
+            SheetUserValuesView(model: model, plzInputValue: model.userPLZ, kWhInputValue: model.userkWH)
         })
         .task {
            await update()
